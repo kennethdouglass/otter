@@ -1,0 +1,117 @@
+@charset "UTF-8";
+
+body {
+ 	font-family: 'Open Sans', verdana, sans-serif;
+ 	color: #333;
+}
+
+
+
+/* =======================================================================================
+		Page Header
+		Notes:
+======================================================================================= */
+
+header {
+	margin-bottom: 32px;
+  padding: 20px 0;
+	text-align: center;
+	border-bottom: 1px solid #333;
+}
+
+/* =======================================================================================
+		Global Typography
+		Notes:
+======================================================================================= */
+
+
+a {
+  color: rgba(104, 165, 212, 1);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+
+
+/* =======================================================================================
+		Global Structure / Pages
+		Notes:
+======================================================================================= */
+
+#page {
+	display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: column;
+  flex-direction: column;
+  -webkit-justify-content: flex-start;
+  justify-content: flex-start;
+  -webkit-align-items: stretch;
+  align-items: stretch;
+  margin: 0 auto;
+  
+  min-height: 100vh;
+}
+
+#pageLeft {
+	padding: 20px;
+	width: 100%;
+	background: #fff;
+}
+
+#pageRight {
+	padding: 20px;
+	width: 100%;
+	border-top: 1px solid #777;
+	background: #f9f9f9;
+	-webkit-box-shadow: 0 -4px 3px rgba(0,0,0,0.1);
+	box-shadow: 0 -4px 3px rgba(0,0,0,0.1);
+}
+
+p {
+	margin-bottom: 12px;
+}
+
+
+@media (min-width: 640px) {
+  #page {
+		-webkit-justify-content: space-between;
+  justify-content: space-between;
+		-webkit-flex-direction: row;
+		flex-direction: row;
+	}
+	#pageLeft, #pageRight {
+		width: 50%;
+	}
+	#pageRight {
+		border-left: 1px solid #777;
+		border-top: none;
+		-webkit-box-shadow: -2px 0 7px rgba(0,0,0,0.1);
+		box-shadow: -2px 0 7px rgba(0,0,0,0.1);
+	}
+}
+
+
+/* =======================================================================================
+		Footer
+		Notes:
+======================================================================================= */
+
+footer {
+	margin-top: 32px;
+  padding: 20px 0;
+  font-size: 0.8rem;
+	text-align: center;
+	border-top: 1px solid #333;
+}
+
+footer a {
+	display: block;
+	margin: 0 0 4px;
+	padding: 7px 0;
+}
+
+
